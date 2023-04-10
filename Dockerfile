@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM ubuntu
 
 RUN mkdir /etc/nginx/templates
 RUN unlink /etc/nginx/sites-available/default.conf
