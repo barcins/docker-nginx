@@ -7,4 +7,4 @@ COPY ./reverse-proxy.conf /etc/nginx/sites-enabled/
 
 
 
-# git clone git@github.com:barcins/docker-nginx.git
+# git pull git@github.com:barcins/docker-nginx.git

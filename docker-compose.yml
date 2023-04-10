@@ -1,6 +1,5 @@
 version: '3.1'
 services: 
   web:
-    build:
-      context: .
-      dockerfile: nginx_con
+    build: .
+     
