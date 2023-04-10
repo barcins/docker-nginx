@@ -1,6 +1,6 @@
-FROM python:3
+FROM alpine
 
-RUN mkdir /etc/nginx/templates
+CMD mkdir -p /etc/nginx/templates
 RUN unlink /etc/nginx/sites-available/default.conf
 COPY reverse-proxy.conf /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
