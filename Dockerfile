@@ -1,4 +1,4 @@
-FROM alpine
+FROM python:3
 
 RUN mkdir /etc/nginx/templates
 RUN unlink /etc/nginx/sites-available/default.conf
