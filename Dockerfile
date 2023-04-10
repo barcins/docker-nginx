@@ -1,4 +1,4 @@
-FROM nginx:1.23-alpine
+FROM nginx
 
 RUN mkdir /etc/nginx/templates
 RUN unlink /etc/nginx/sites-available/default.conf
