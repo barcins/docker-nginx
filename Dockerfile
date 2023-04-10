@@ -1,4 +1,4 @@
-FROM nginx
+FROM alpine
 
 RUN mkdir -p /etc/nginx/templates
 RUN rm -rf /etc/nginx/sites-available/default.conf
