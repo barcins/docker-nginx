@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN sudo mkdir -p /etc/nginx/templates
+RUN mkdir -p /etc/nginx/templates
 RUN sudo rm -rf /etc/nginx/sites-available/default.conf
 COPY ./reverse-proxy.conf /etc/nginx/sites-available/
 RUN sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
