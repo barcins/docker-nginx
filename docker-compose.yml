@@ -8,7 +8,7 @@ services:
     volumes:
      - ./templates:/etc/nginx/templates
     ports:
-     - "8080:80"
+     - "5000:80"
     environment:
      - NGINX_HOST=lenschess.com
      - NGINX_PORT=80
